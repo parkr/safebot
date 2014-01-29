@@ -1,0 +1,7 @@
+#! /bin/bash
+
+npm install
+
+if [ -z "$(git remote -v | grep heroku)" ]; then
+  git remote add heroku git@heroku.com:safebot.git
+fi
